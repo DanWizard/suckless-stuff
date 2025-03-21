@@ -49,3 +49,11 @@ vim.cmd([[
 set signcolumn=yes
 autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 ]])
+
+vim.keymap.set("n", "<leader>e", function()
+	vim.diagnostic.open_float(nil, { focusable = true })
+end, { desc = "Focus diagnostics" })
+
+vim.keymap.set("n", "<leader>c", function()
+	vim.api.nvim_win_close(0, false)
+end, { desc = "Close focused float" })

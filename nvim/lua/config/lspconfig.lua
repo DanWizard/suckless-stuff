@@ -22,3 +22,4 @@ require("lspconfig").lua_ls.setup({})
 
 require("lspconfig").tsserver.setup({})
 require("lspconfig").cssls.setup({})
+require("lspconfig").clangd.setup({})

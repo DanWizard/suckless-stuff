@@ -1,5 +1,6 @@
 return {
 	"kvrohit/rasmus.nvim",
+	"aditya-azad/candle-grey",
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
 	"neovim/nvim-lspconfig",
@@ -58,12 +59,13 @@ return {
 		build = "npm install && npx gulp vsDebugServerBundle",
 	},
 	-- example lazy.nvim install setup
+	{ "blazkowolf/gruber-darker.nvim" },
 	{
 		"slugbyte/lackluster.nvim",
 		lazy = false,
 		priority = 1000,
 		init = function()
-			vim.cmd.colorscheme("lackluster")
+			vim.cmd.colorscheme("candle-grey")
 			-- vim.cmd.colorscheme("lackluster-hack") -- my favorite
 			-- vim.cmd.colorscheme("lackluster-mint")
 		end,
